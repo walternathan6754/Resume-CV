@@ -20,17 +20,15 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[10pt]{resume} % Use the custom resume.cls style
+\documentclass[9pt]{resume} % Use the custom resume.cls style
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \usepackage[table, dvipsnames]{xcolor}
 
-
-
 \name{Nathan Walter} % Your name
 \address{Current Address:  120 Talbot Laboratory, 104 S. Wright St. \\ Urbana, Illinois 61801} % Your address
 \address{Permanent Address:  2320 Thayer St. \\ Evanston, Illinois 60201} % Your secondary addess (optional)
-\address{(847)~$\cdot$~849~$\cdot$~7896 \\ \color{blue}{walter9@illinois.edu}} % Your phone number and email
+\address{(847)~$\cdot$~849~$\cdot$~7896 \\ \color{blue}{walter9-(at)-illinois-(.)-edu}} % Your phone number and email
 
 
 \begin{document}
@@ -44,60 +42,93 @@
 {\it{PhD Candidate}} in Nuclear, Plasma, and Radiological Engineering (NPRE) \\
 {\it{Master of Science}} in Nuclear, Plasma, and Radiological Engineering (NPRE) \\
 {\it{Graduate Minor}} in Computational Science and Engineering\\
-Expected PhD Completion: May, 2018\\
+Expected PhD Completion: August, 2018\\
 Master's Degree Completion: August, 2016 \\
 Advisor: Yang Zhang
 \begin{itemize}
 	\item Master's Thesis Topic: Direct Energy Landscape Sampling of the Homogeneous Nucleation and Crystal Growth of a Model Liquid
 \end{itemize}
-\hfill\\
+
 {\bf University of Illinois at Champaign-Urbana (UIUC)} \hfill { August, 2010 -- January, 2014} \\ 
 {\it Bachelor of Science} in Nuclear, Plasma, and Radiological Engineering (NPRE) \\
 Minor in Mathematics \\
 Overall GPA: 3.84/4.00
-\smallskip \\
-
-
 \end{rSection}
 
 \begin{rSection}{Research Interests}
-	Understanding slow material processes from a atomistic scale; Neutron and X-ray scattering; Classical and Ab Initio molecular dynamics for modeling and simulation; Materials undergoing irradiation; Large deformation constitutive material equations. Machine Learning algorithms
-	\\
+	Understanding slow material processes from a atomistic scale; Rare event sampling methods such as metadynamics; Neutron and X-ray scattering; Classical and Ab Initio molecular dynamics for modeling and simulation; Materials undergoing irradiation; Large deformation constitutive material equations. Machine Learning algorithms
 \end{rSection}
-
 
 \begin{rSection}{Appointments}
 	{\bf Research Assistant} Yang Zhang's Research Group \hfill {January, 2014 -- present} 
 	\\
-	\\
 	{\bf Nuclear Regulatory Commission Graduate Fellowship} \hfill {January 2014 -- present}
 	\\
-	\\
-	{\bf Teaching Assistant} \hfill {August, 2013 -- January, 2014} \\
-	NPRE 448: Nuclear Systems Engineering and Design
-	\\
+	{\bf Teaching Assistant}, NPRE 448: Nuclear Systems Engineering and Design\hfill {August, 2013 -- January, 2014}
 \end{rSection}
 
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+	\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+		Computer Programming Languages &  C, C++, Matlab, Python, Fortran, Java, \LaTeX, Swift (novice),\\ & AJAX, R, OpenMP, MPI, HTML, CSS, Julia (novice)
+		\\[5pt]
+		Software & GROMACS, LAMMPS, VASP, SRIM/TRIM, FLAG, \\ & VMD, IGOR Pro, Dave, gnuplot, Adobe Photoshop, \\ & Illustrator, Flash, SPSS
+	\end{tabular}
+\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-
 \begin{rSection}{Research Experience}
-	{\bf Master's Degree Research} \hfill {January 2014 -- present}
-	\begin{itemize}
-	\item Implemented a method of directly sampling the energy landscape into the molecular dynamics package GROMACS in order to study the activation barrier statistics of various systems
-	\item Developed reduction codes to extract quantities from classical and ab initio molecular dynamics simulations relevant for comparing simulations to scattering experiments (i.e. intermediate scattering function, density of states, etc.).
-	\item Developed an open-source package, \textit{LiquidLib}, to analyze molecular dynamics trajectories to study the structure and dynamics of liquids and compare the results to neutron scattering experiments 
-	\item Performed ab initio molecular dynamic simulations to study the vibrational modes in D$_2$O and compare to neutron scattering experiments conducted at SEQUOIA, SNS, ORNL. 
-	\item Performed ab initio molecular dynamic simulations to study the effects of hydrogen impurities on liquid lithium transport properties
-	\item Created a high dimensional molecular dynamics package to study the dimensionality of various quantities
+	{\bf PhD Research} \hfill {08.2016 -- present}
+	\begin{itemize}\setlength\itemsep{-3pt}
+		\item Implemented a method of directly sampling the energy landscape into the molecular dynamics package GROMACS in order to study the activation barrier statistics of various protein systems 
+		\item Used energy landscape sampling to provide insight to protein folding and unfolding dynamics
+		\item Developed a new method of directly sampling the energy landscape with higher computational efficiency than the one implemented in my master's work.
+		\item Sampled and studied the energy landscapes of vary potentials to determine the affect of potential softness on the landscape
 	\end{itemize}
 	{\centering\noindent\rule{5cm}{0.4pt}}
 	\\
-	{\bf Machine Learning Experience} \hfill {Fall 2015}
-	\begin{itemize}
+	{\bf Master's Degree Research} \hfill {01.2014 -- 08.2016}
+	\begin{itemize}\setlength\itemsep{-3pt}
+		\item Implemented a method of directly sampling the energy landscape into the molecular dynamics package GROMACS in order to study the activation barrier statistics of glass forming and crystal forming systems
+		\item Developed reduction codes to extract quantities from classical and \textit{ab initio} molecular dynamics simulations relevant for comparing simulations to scattering experiments (i.e. intermediate scattering function, density of states, etc.).
+		\item Developed an open-source package, \textit{LiquidLib}, to analyze molecular dynamics trajectories to study the structure and dynamics of liquids and compare the results to neutron scattering experiments 
+		\item Performed \textit{ab initio} molecular dynamic simulations to study the vibrational modes in D$_2$O and compare to neutron scattering experiments conducted at SEQUOIA, SNS, ORNL. 
+		\item Performed \textit{ab initio} molecular dynamic simulations to study the effects of hydrogen impurities on liquid lithium transport properties
+		\item Created a high dimensional molecular dynamics package to study the dimensionality of various quantities
+	\end{itemize}
+	{\centering\noindent\rule{5cm}{0.4pt}}
+	\\
+	{\bf Neutron and X-ray Scattering Summer School} \hfill {06.2015}
+	\begin{itemize}\setlength\itemsep{-3pt}
+		\item Studied x-ray scattering methods at the Advanced Photon Source, APS, Argonne National Laboratory (ANL)
+		\item Studied neutron scattering methods at SNS and HFIR, Oak Ridge National Laboratory (ORNL)
+	\end{itemize}
+	{\centering\noindent\rule{5cm}{0.4pt}}
+	\\
+	{\bf Scattering Experiments}
+	\begin{itemize}\setlength\itemsep{-3pt}
+		\item Participated in pair distribution experiments on glass forming metallic liquids using a neutron electrostatic levatator performed at NOMAD, SNS, Oak Ridge National Laboratory (ORNL)
+		\item Participated on Inelastic Neutron Scattering experiments on liquid metals performed at CNCS, SNS, Oak Ridge National Labratory (ORNL) 
+		\item Analyzed scattering data on D$_2$O performed at SEQUOIA, SNS, Oak Ridge National Laboratory (ORNL)
+	\end{itemize}
+	{\centering\noindent\rule{5cm}{0.4pt}}
+	\\
+	{\bf Los Alamos Computational Physics Student Summer Workshop} \hfill {Summer 2014}
+	\begin{itemize}\setlength\itemsep{-3pt}
+		\item Implemented a strain-based constituent equation for large material deformation under high strain-rates into a production hydrocode
+		\item Developed concepts for extending the strain-based formulation from perfectly plastic materials to rate-hardening materials.
+		\item Studied the advantages of the strain-based with pertaining to advection in Lagrangian mode, finite material rotations, and artificial viscosity.
+	\end{itemize}
+	{\centering\noindent\rule{5cm}{0.4pt}}
+	\\
+	{\bf Machine Learning Experience}
+	\begin{itemize}\setlength\itemsep{-3pt}
 		\item Enrolled in several high level statistics courses, including the course on machine learning
 		\item Participated in the Kaggle competition for Springleaf as a team. 
 		\item For the competition, used various machine learning methods to reduce the data space, and build predictive models
@@ -105,130 +136,76 @@ Overall GPA: 3.84/4.00
 	\end{itemize}
 	{\centering\noindent\rule{5cm}{0.4pt}}
 	\\
-	{\bf Neutron and X-ray Scattering Summer School} \hfill {June 2015}
-	\begin{itemize}
-	\item Studied x-ray scattering methods at the Advanced Photon Source, APS, Argonne National Laboratory (ANL)
-	\item Studied neutron scattering methods at SNS and HFIR, Oak Ridge National Laboratory (ORNL)
-	\end{itemize}
-	{\centering\noindent\rule{5cm}{0.4pt}}
-	\\
-	{\bf Scattering Experiments} \hfill {May 2014 - May 2016}
-	\begin{itemize}
-	\item Participated in pair distribution experiments on glass forming metallic liquids using a neutron electrostatic levatator performed at NOMAD, SNS, Oak Ridge National Laboratory (ORNL)
-	\item Participated on Inelastic Neutron Scattering experiments on liquid metals performed at CNCS, SNS, Oak Ridge National Labratory (ORNL) 
-	\item Analyzed scattering data on D$_2$O performed at SEQUOIA, SNS, Oak Ridge National Laboratory (ORNL)
-	\end{itemize}
-	{\centering\noindent\rule{5cm}{0.4pt}}
-	\\
-	{\bf Los Alamos Computational Physics Student Summer Workshop} \hfill {Summer 2014}
-	\begin{itemize}
-	\item Implemented a strain-based constituent equation for large material deformation under high strain-rates into a production hydrocode
-	\item Developed concepts for extending the strain-based formulation from perfectly plastic materials to rate-hardening materials.
-	\item Studied the advantages of the strain-based with pertaining to advection in Lagrangian mode, finite material rotations, and artificial viscosity.
-	\end{itemize}
-	{\centering\noindent\rule{5cm}{0.4pt}}
-	\\
 	{\bf Institute for Genomic Biology} \hfill {Summer 2012}\\
 	Undergraduate Research Assistant to Biofuel Lab Research \hfill {Champaign, IL}
-	\begin{itemize}
-	\item Worked on British Petroleum (BP) Biofuel Project
-	\item Analyzed soil samples for carbon/nitrogen make-up
-	\item Studied different plants' potential as a biofuel
+	\begin{itemize}\setlength\itemsep{-3pt}
+		\item Worked on British Petroleum (BP) Biofuel Project
+		\item Analyzed soil samples for carbon/nitrogen make-up
+		\item Studied different plants' potential as a biofuel
 	\end{itemize}
 	{\centering\noindent\rule{5cm}{0.4pt}}
 	\\
 	{\bf University of Northeastern Illinois} \hfill {Summer 2009}\\
 	Student Research Assistant on Abstract Topology Project \hfill {Chicago, IL}
-	\begin{itemize}
-	\item Implemented Java code to simulate contact points
-	\item Developed mathematical and programming algorithms for the project
+	\begin{itemize}\setlength\itemsep{-3pt}
+		\item Implemented Java code to simulate contact points
+		\item Developed mathematical and programming algorithms for the project
 	\end{itemize}
 	
 \end{rSection}
 
-
-
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Technical Strengths}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-	Computer Programming Languages &  C, C++, Matlab, Python, Fortran, Java, \LaTeX, Swift (novice),\\ & AJAX, R, OpenMP, MPI, HTML, CSS, Julia (novice)\\
-	\\
-	Software & GROMACS, LAMMPS, VASP, SRIM/TRIM, FLAG, \\ & VMD, IGOR Pro, Dave, gnuplot, Adobe Photoshop, \\ & Illustrator, Flash, SPSS
-
-\end{tabular}
-\\
-
+\begin{rSection}{Presentations}
+	Talk, University of Illinois Urbana-Champaign Nuclear Engineering Graduate Seminar, {\it{``Direct Energy Landscape Sampling of the Homogeneous Nucleation and Crystal Growth of a Model Liquid''}} \hfill {12.2016}
+	\\[5pt]
+	Discussion, The Hacker Within: University of Illinois Urbana-Champaign, {\it{``An Overview of Techniques and Methods in Machine Learning with Application to Sci-Kit (sklearn) in Python''}} \hfill {11.2016}
+	\\[5pt]
+	Talk, University of Illinois Urbana-Champaign Soft Materials Seminar, {\it{``Direct Energy Landscape Sampling of the Homogeneous Nucleation and Crystal Growth of a Model Liquid''}} \hfill {09.2016}
+	\\[5pt]
+	Talk, American Conference on Neutron Scattering, {\it{``Homogeneous Nucleation and Crystal Growth in a Model Liquid from Direct Energy Landscape Sampling Simulations''}} \hfill {07.2016}
+	\\[5pt]
+	Discussion, The Hacker Within: University of Illinois Urbana-Champaign, {\it{``Understanding Classification of Hand-Written Numbers with Machine Learning Techniques''}} \hfill {05.2016}
+	\\[5pt]
+	Talk, University of Illinois Urbana-Champaign Nuclear Engineering Undergraduate Seminar, {\it{``Homogeneous Nucleation and Crystal Growth in a Model Liquid from Direct Energy Landscape Sampling Simulations''}} \hfill {04.2016} 
+	\\[5pt]
+	Talk, American Physical Society March Meeting, {\it{``Homogeneous Nucleation and Crystal Growth in a Model Liquid from Direct Energy Landscape Sampling Simulations''}} \hfill {03.2016}
+	\\[5pt]
+	Poster, American Physical Society March Meeting, {\it{``Energy Landscape Statistics of Kob-Andersen Liquid From Direct Energy Barrier Sampling''}} \hfill {03.2015}
+	\\[5pt]
+	Contributed Talk, Los Alamos Student Summer Symposium, {\it{``A New Strain-Based Method for Plastic Flow Simulations''}} \hfill {08.2014} \\
 \end{rSection}
 
 \begin{rSection}{Publications}
+	{\bf Nathan Walter}, Zhikun Cai, Abhishek Jaiswal, Yang Zhang, {\it ``LiquidLib: A comprehensive tool for post processing of classical and \textit{ab initio} molecular dynamics simulations of liquids with application to neutron scattering experiments''}, to be submitted
+	\\[5pt]
+	Zhikun Cai, Abhishek Jaiswal, {\bf Nathan Walter}, Yang Zhang, {\it ``Validity boundary of the Stokes-Einstein relation in water''} to be submitted
+	\\[5pt]
+	{\bf Nathan Walter}, Yang Zhang, {\it ``Direct Energy Landscape Sampling of the Homogeneous Nucleation and Crystal Growth of a Model Liquid''}, to be submitted
+	\\[5pt]
+	Zhikun Cai, {\bf Nathan Walter}, Yang Zhang, {\it ``Energy Landscape Statistics And Coarsening In Liquids: A Relaxation Excitation Mode Analysis: Part I}", to be submitted.
+	\\[5pt]
+	Zhikun Cai, {\bf Nathan Walter}, Yang Zhang, {\it ``Energy Landscape Statistics And Coarsening In Liquids: A Relaxation Excitation Mode Analysis: Part II}", to be submitted.
+	\\[5pt]
+	{\bf Nathan Walter}, Zhikun Cai, Yang Zhang, {\it ``Energy Landscape Statistics And Coarsening In Liquids: A Relaxation Excitation Mode Analysis: Part III}", to be submitted.
+	\\[5pt]
 	{ \bf Nathan Walter}, Paul Friedrichsen, Scott Runnels, {\it{``Extending a Strain Space Formulation for Plasticity to Rate-Hardening Materials and Finite Rotations"}}, submitted to Mathematics and Computers in Simulation .
-	\\
-	\\
+	\\[5pt]
 	{ \bf Nathan Walter}, Paul Friedrichsen, Scott Runnels, {\it{``Extending a Strain Space Formulation for Plasticity to Rate-Hardening Materials and Finite Rotations"}}, LA-UR-15-23329, Los Alamos Unlimited Release (2015).
-	\\
-	\\
-	Zhikun Cai, {\bf Nathan Walter}, Yang Zhang, {\it ``Energy Landscape Statistics And Coarsening In Liquids: A Relaxation Mode Analysis}", to be submitted.
-	\\
-	\\
+	\\[5pt]
 	{ \bf Nathan Walter}, Paul Friedrichsen, {\it{``Improving Plasticity Modeling in Hydrocodes with Hypoelastic Frameworks"}}, LA-UR-14-26946, Los Alamos Unlimited Release (2014).
 	\\	
 \end{rSection}
 
-\begin{rSection}{Presentations}
-	Talk, University of Illinois Urbana-Champaign Nuclear Engineering Graduate Seminar, {\it{``Direct Energy Landscape Sampling of the Homogeneous Nucleation and Crystal Growth of a Model Liquid''}} \hfill {November, 2016}
-	\\
-	\\
-	Discussion, The Hacker Within: University of Illinois Urbana-Champaign, {\it{``An Overview of Techniques and Methods in Machine Learning with Application to Sci-Kit (sklearn) in Python''}} \hfill {November, 2016}
-	\\
-	\\
-	Talk, University of Illinois Urbana-Champaign Soft Materials Seminar, {\it{``Direct Energy Landscape Sampling of the Homogeneous Nucleation and Crystal Growth of a Model Liquid''}} \hfill {September, 2016}
-	\\
-	\\
-	Talk, American Conference on Neutron Scattering, {\it{``Homogeneous Nucleation and Crystal Growth in a Model Liquid from Direct Energy Landscape Sampling Simulations''}} \hfill {July, 2016}
-	\\
-	\\
-	Discussion, The Hacker Within: University of Illinois Urbana-Champaign, {\it{``Understanding Classification of Hand-Written Numbers with Machine Learning Techniques''}} \hfill {May, 2016}
-	\\
-	\\
-	Talk, University of Illinois Urbana-Champaign Nuclear Engineering Undergraduate Seminar, {\it{``Homogeneous Nucleation and Crystal Growth in a Model Liquid from Direct Energy Landscape Sampling Simulations''}} \hfill {April, 2016} 
-	\\
-	\\
-	Talk, American Physical Society March Meeting, {\it{``Homogeneous Nucleation and Crystal Growth in a Model Liquid from Direct Energy Landscape Sampling Simulations''}} \hfill {March, 2016} \\
-	\\
-	Poster, American Physical Society March Meeting, {\it{``Energy Landscape Statistics of Kob-Andersen Liquid From Direct Energy Barrier Sampling''}} \hfill {March, 2015} \\
-	\\	
-	Contributed Talk, Los Alamos Student Summer Symposium, {\it{``A New Strain-Based Method for Plastic Flow Simulations''}} \hfill {August, 2014} \\
-\end{rSection}
-
 
 \begin{rSection}{Awards, Honors, Clubs, and Certificates}
-U.S. Department of Energy, Naval Reactors (NR), {\it Rickover Fellowship Program in Nuclear Engineering} Honorable Mention \hfill{April, 2014} 
-\\
-\\
-{ Nuclear Regulatory Commission Undergraduate Scholarship} \hfill{Fall, 2011 -- Spring, 2013}
-\\
-\\
-University of Illinois at Champaign-Urbana Dean's List Recipient \hfill{Spring, 2011 -- Spring, 2013}
-\\
-\\
-{\it{The Hacker Within: University of Illinois Urbana-Champaign}}, An organization for computational scientists to share and practice computational skills. 
-\begin{flushright}
-Member:   August, 2015 -- present
-\\
-Treasure: August, 2016 -- present
-\end{flushright}
-
-Successfully completed the following Coursera and Udemy online courses:
-\begin{itemize}
-	\item Become a Certified Web Developer (Udemy)
-	\item The Data Scienties's ToolBox (Coursera)
-	\item Statistical Inference (Coursera)
-	\item Machine Learning by Standford University (Coursera)
-\end{itemize}
+U.S. Department of Energy, Naval Reactors (NR), {\it Rickover Fellowship Program} Honorable Mention \hfill{00.2014} 
+\\[3pt]
+{ Nuclear Regulatory Commission Undergraduate Scholarship} \hfill{12.2011 -- 06.2013}
+\\[3pt]
+University of Illinois at Champaign-Urbana Dean's List Recipient \hfill{06.2011 -- 0.62013}
+\\[3pt]
+{\it{The Hacker Within}}, An organization for computational scientists to share and practice computational skills.\\
+\strut\hfill {Member:   08.2015 -- present}\\
+\strut\hfill Treasure: 08.2016 -- present
 \end{rSection}
 
 
