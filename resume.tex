@@ -1,0 +1,108 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[table, dvipsnames]{xcolor}
+
+\name{Nathan Walter} % Your name
+\address{Current Address:  120 Talbot Laboratory, 104 S. Wright St. \\ Urbana, Illinois 61801} % Your address
+\address{(847)~$\cdot$~849~$\cdot$~7896 \\ \color{blue}{walter9-(at)-illinois-(.)-edu}} % Your phone number and email
+
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf University of Illinois at Champaign-Urbana (UIUC)} \hfill {08.2013 -- present} \\
+{\it{PhD Candidate}} in Nuclear, Plasma, and Radiological Engineering (NPRE) \hfill{Expected: 08.2018}\\
+{\it{Master of Science}} in Nuclear, Plasma, and Radiological Engineering (NPRE) \hfill{08.2018}\\
+{\it{Graduate Minor}} in Computational Science and Engineering\\
+Advisor: Yang Zhang
+\begin{itemize}
+	\item Master's Thesis Topic: Direct Energy Landscape Sampling of the Homogeneous Nucleation and Crystal Growth of a Model Liquid
+\end{itemize}
+
+{\bf University of Illinois at Champaign-Urbana (UIUC)} \hfill {08.2010 -- 12.2014} \\ 
+{\it Bachelor of Science} in Nuclear, Plasma, and Radiological Engineering (NPRE) \\
+Minor in Mathematics \hfill{Overall GPA: 3.84/4.00}
+\end{rSection}
+
+\begin{rSection}{Awards, Honors, Clubs, and Certificates}
+	American Physical Society, GSOFT Travel Award \hfill{03.2017}
+	\\
+	Graduate Specialization in Computational Science and Engineering \hfill{08.2016}
+	\\
+	Los Alamos National Lab Computational Summer Workshop \hfill{06.2014 -- 08.2014}
+	\\
+	U.S. Department of Energy, Naval Reactors (NR), {\it Rickover Fellowship Program} Honorable Mention \hfill{00.2014} 
+	\\
+	{ Nuclear Regulatory Commission Undergraduate Scholarship} \hfill{12.2011 -- 06.2013}
+	\\
+	University of Illinois at Champaign-Urbana Dean's List Recipient \hfill{06.2011 -- 0.62013}
+	\\
+	{\it{The Hacker Within}}, An organization for computational scientists.
+	\strut\hfill {Member:   08.2015 -- present}\\
+	\strut\hfill Treasure: 08.2016 -- present
+\end{rSection}
+
+\begin{rSection}{Select Presentations and Publications}
+	Talk, American Physical Society March Meeting, {\it{``Protein Folding and Unfolding Dynamics from Direct Energy Landscape Sampling Simulations''}} \hfill{03.2017}
+	\\[5pt]
+	Talk, University of Illinois Urbana-Champaign Nuclear Engineering Undergraduate Seminar, {\it{``Homogeneous Nucleation and Crystal Growth in a Model Liquid from Direct Energy Landscape Sampling Simulations''}} \hfill {04.2016} 
+	\\[5pt]
+	Tim P. MoneyPenny II, {\bf Nathan Walter}, Zhikun Cai, Y. Miao, D. Gray, J. Hinman, S. Lee, Yang Zhang, Jeff Moore, {\it{``Impact of shape persistence on the porosity of molecular cages''}} J. Am. Chem. Soc (2017).
+	\\[5pt]
+	{ \bf Nathan Walter}, Paul Friedrichsen, Scott Runnels, {\it{``Extending a Strain Space Formulation for Plasticity to Rate-Hardening Materials and Finite Rotations"}}, LA-UR-15-23329, Los Alamos Unlimited Release (2015).
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+	\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+		Computer Programming Languages &  C, C++, Matlab, Python, Fortran, Java, \LaTeX, Swift (novice),\\ & AJAX, R, OpenMP, MPI, HTML, CSS, Julia (novice), Make
+		\\[5pt]
+		Software & GROMACS, LAMMPS, VASP, SRIM/TRIM, FLAG, \\ & VMD, IGOR Pro, Dave, gnuplot, Adobe Suite, SPSS
+	\end{tabular}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Select Research Projects}
+	\begin{itemize}\setlength\itemsep{-3pt}
+		\item Implemented a metadynamics method for directly sampling the energy landscape into the molecular dynamics package GROMACS, studied the activation barrier statistics of amorphous and ordered systems
+		\item Developed an open-source package, \textit{LiquidLib}, to analyze molecular dynamics trajectories to study the structure and dynamics of liquids and compare the results to neutron scattering experiments 
+		\item Performed \textit{ab initio} molecular dynamic simulations to study the vibrational modes in D$_2$O, the effects of hydrogen impurities on liquid lithium transport properties, and shape persistence in molecular cages 
+		\item Created a high dimensional molecular dynamics package to study the dimensionality of various quantities
+	\end{itemize}
+
+\end{rSection}
+
+\end{document}
